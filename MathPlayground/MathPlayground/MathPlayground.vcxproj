@@ -78,18 +78,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="ChangeCalc.cpp" />
-    <ClCompile Include="Factorial.cpp" />
-    <ClCompile Include="MainFunctions.cpp" />
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="ChangeCalc.h" />
-    <ClInclude Include="Factorial.h" />
-    <ClInclude Include="MainFunctions.h" />
-    <ClInclude Include="header.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
