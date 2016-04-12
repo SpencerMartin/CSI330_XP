@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\ChangeCalc">
+      <UniqueIdentifier>{e0187255-c04f-4abe-8894-4cb4611cf05b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ChangeCalc">
+      <UniqueIdentifier>{763db518-a8a4-4b6b-8949-8f9ac46124d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Factorial">
+      <UniqueIdentifier>{d8a603e8-7357-43f4-a290-4bfeb8c5d4af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Factorial">
+      <UniqueIdentifier>{c2e62034-c00b-4c8d-ad50-887a0fd23e57}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFunctions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeCalc.cpp">
+      <Filter>Source Files\ChangeCalc</Filter>
+    </ClCompile>
+    <ClCompile Include="Factorial.cpp">
+      <Filter>Source Files\Factorial</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeCalc.h">
+      <Filter>Header Files\ChangeCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="Factorial.h">
+      <Filter>Header Files\Factorial</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
