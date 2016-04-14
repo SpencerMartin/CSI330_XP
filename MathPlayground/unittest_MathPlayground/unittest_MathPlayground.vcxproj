@@ -87,6 +87,13 @@
       <Project>{7b5e9958-943e-46a1-ba41-dc380a0e4049}</Project>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\MathPlayground\functions.cpp" />
+    <ClCompile Include="unittest_brian.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\MathPlayground\header.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
