@@ -26,7 +26,85 @@ bool menu()
 //return true to exit
 bool checkInput(string input)
 {
-	return true;
+	stringstream ss;
+	int option = 0;		//forward, backward, noisy, pi, error
+	int value;
+	bool again = true;
+	
+	for (string::iterator it = input.begin(); it != input.end(); ++it)
+	{
+		if (*it == '-')
+		{
+			ss << *it;
+			option = 1;
+		}
+		else if (isdigit(*it))
+		{
+			ss << *it;
+		}
+		else
+		{
+			if (*it == 'a')
+			{
+				option = 2;
+			}
+			else if (*it == 'p')
+			{
+				if (*(it + 1) == 'i')
+				{
+					option = 3;
+					++it;
+				}
+			}
+			else if (*it == 'e' || *it == 'E')
+			{
+				option = 4;
+			}
+			else
+			{
+				option = 5;	//errant characters
+			}
+		}
+	}
+
+	ss >> value;
+
+	switch (option)
+	{
+		case 0:
+		{
+			cout << printForward(value);
+			break;
+		}
+		case 1:
+		{
+			cout << printBackward(value);
+			break;
+		}
+		case 2:
+		{
+			cout << printNoisy(value);
+			break;
+		}
+		case 3:
+		{
+			cout << printPi();
+			break;
+		}
+		case 4:
+		{
+			again = false;
+			break;
+		}
+		default:
+		{
+			cout << "Ya had some kind of errant input there, champ";
+		}
+	}
+
+
+
+	return again;
 }
 
 
@@ -70,8 +148,15 @@ string printNoisy(int printNum)
 
 	for (i = 0; i < printNum; i++)
 	{
-		hall += brian + "\a";
+		hall += brian;
 	}
-	hall += "\n";
+	hall += "\a\n";
+	return hall;
+}
+
+string printPi()
+{
+	string hall = "Brian Hall Brian Hall Brian Hall B";
+
 	return hall;
 }
