@@ -26,10 +26,52 @@ bool menu()
 //return true to exit
 bool checkInput(string input)
 {
-
-
+	return true;
 }
 
 
+string printBackward(int printNum)
+{
+	int i;
+	string nairb = "llaH nairB ";
+	string llah = "";
+
+	for (i = printNum; i < 0; i++)
+	{
+		llah += nairb;
+	}
+	llah += "\n";
+
+	return llah;
+}
 
 
+string printForward(int printNum)
+{
+	int i;
+	string brian = "Brian Hall ";
+	string hall = "";
+
+	for (i = 0; i < printNum; i++)
+	{
+		hall += brian;
+	}
+	hall += "\n";
+
+	return hall;
+}
+
+
+string printNoisy(int printNum)
+{
+	int i;
+	string brian = "Brian Hall ";
+	string hall = "";
+
+	for (i = 0; i < printNum; i++)
+	{
+		hall += brian + "\a";
+	}
+	hall += "\n";
+	return hall;
+}
