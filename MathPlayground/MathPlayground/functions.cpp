@@ -156,7 +156,7 @@ string printNoisy(int printNum)
 
 string printPi()
 {
-	string hall = "Brian Hall Brian Hall Brian Hall B";
+	string hall = "Brian Hall Brian Hall Brian Hall B \n";
 
 	return hall;
 }

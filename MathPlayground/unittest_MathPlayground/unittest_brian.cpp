@@ -1,23 +1,28 @@
 // unittest_MathPlayground.cpp : Defines the entry point for the console application.
 //
 #include "gtest/gtest.h"
-#include "header.h"
+#include "../MathPlayground/header.h"
 
-TEST(testChange, myChangeTest)
+TEST(testForward, twice)
 {
-	EXPECT_EQ(0, ChangeCalculator());
+
+
+	EXPECT_EQ("Brian Hall Brian Hall \n", printForward(2));
 }
 
-TEST(testFactorial, zeroInput)
+TEST(testBackward, 02)
 {
-	EXPECT_EQ(0, RunFactorial(0));
+	EXPECT_EQ("llaH nairB llaH nairB \n", printBackward(-2));
 }
 
-TEST(testFactorial, positiveInput)
+TEST(testNoisy, three)
 {
-	EXPECT_LT(0, RunFactorial(1));
-	EXPECT_LT(0, RunFactorial(2));
-	EXPECT_LT(0, RunFactorial(6));
+	EXPECT_EQ("Brian Hall Brian Hall Brian Hall \a\n", printNoisy(3));
+}
+
+TEST(testPi, normal)
+{
+	EXPECT_EQ("Brian Hall Brian Hall Brian Hall B \n", printPi());
 }
 
 
